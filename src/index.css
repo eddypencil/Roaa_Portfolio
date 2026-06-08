@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.portfiolio-hero2{
+   background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfiolio-hero{
+    background-image: url(assets/backGroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reverse-portfiolio-hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-portfiolio-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url(assets/backGroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@keyframes slideToPosition {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(var(--final-offset));
+  }
+}
